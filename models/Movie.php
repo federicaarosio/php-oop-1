@@ -26,7 +26,7 @@ class Movie {
     
     //Metodi
     public function getMovie() {
-        echo "Titolo: " . this->title . " directed by: " . this->director;
+        echo "Title: " . $this->title . " <br>directed by: " . $this->director;
     }
     
 }
