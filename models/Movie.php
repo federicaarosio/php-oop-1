@@ -12,7 +12,7 @@ class Movie {
      * Construct a new movie
      *
      * @param string $_title Movie's name
-     * @param string $_genre Movie's genre
+     * @param array|null $_listOfGenres Movie's genres
      * @param string $_director Movie's director
      * @param string|null $_synopsis Movie's short synopsis
      */
