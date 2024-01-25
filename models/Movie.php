@@ -3,7 +3,7 @@
 class Movie {
     // Variabili
     public $title;
-    public $genre;
+    public $listOfGenres;
     public $director;
     public $synopsis;
 
@@ -16,9 +16,9 @@ class Movie {
      * @param string $_director Movie's director
      * @param string|null $_synopsis Movie's short synopsis
      */
-    function __construct(string $_title, string $_genre, string $_director, string $_synopsis = null) {
+    function __construct(string $_title, array $_listOfGenres = null, string $_director, string $_synopsis = null) {
         $this -> title = $_title;
-        $this -> genre = $_genre;
+        $this -> listOfGenres = $_listOfGenres;
         $this -> director = $_director;
         $this -> synopsis = $_synopsis;
     }
